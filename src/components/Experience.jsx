@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import uniqid from "uniqid";
-import ExperienceForm from "./Experience.jsx";
+import ExperienceForm from "./ExperienceForm.jsx";
 
 export default function Experience() {
     const [state, setState] = useState({

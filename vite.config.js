@@ -5,4 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/cv-app/",
   plugins: [react()],
-})
+});

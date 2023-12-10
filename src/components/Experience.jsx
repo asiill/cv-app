@@ -8,17 +8,6 @@ export default function Experience() {
         editMode: true,
     });
 
-    const handleChange = (e) => {
-        setState({
-            experienceArr: state.experienceArr.map(exp => {
-                return (
-                    exp.id === e.target.className ? { ...exp, [e.target.name]: e.target.value } : exp
-                );
-            }),
-            editMode: true,
-        });
-    };
-
     const handleEdit = () => {
         setState({ ...state, editMode: true });
     };
@@ -43,6 +32,17 @@ export default function Experience() {
         });
     };
 
+    const handleChange = (e) => {
+        setState({
+            experienceArr: state.experienceArr.map(exp => {
+                return (
+                    exp.id === e.target.className ? { ...exp, [e.target.name]: e.target.value } : exp
+                );
+            }),
+            editMode: true,
+        });
+    };
+    
     const handleDelete = (e) => {
         setState({
             experienceArr: state.experienceArr.filter(exp => {
@@ -52,6 +52,12 @@ export default function Experience() {
             }),
             editMode: true,
         });
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+        }
     };
 
     const editContainer = (
@@ -76,6 +82,7 @@ export default function Experience() {
                                 id={exp.id}
                                 handleChange={handleChange}
                                 handleDelete={handleDelete}
+                                handleKeyDown={handleKeyDown}
                             />
                         </>
                     );

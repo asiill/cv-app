@@ -63,20 +63,22 @@ export default function Personal() {
                 />
                 <button type="submit" className="submit-btn">Submit</button>
             </form>
+            <hr />
         </div>
     );
 
     const displayContainer = (
         <div className="personal-display-container">
-            <button className="edit-btn" onClick={handleEdit}>Edit</button>
             <div className="name-container">
-                <h1>{state.name}</h1>
+                <h1 className="full-name">{state.name}</h1>
+                <button className="edit-btn" onClick={handleEdit}>Edit</button>
             </div>
             <div className="contact-container">
                 <p>{state.email}</p>
                 <p>{state.phone}</p>
                 <p>{state.location}</p>
             </div>
+            <hr />
         </div>
     );
 

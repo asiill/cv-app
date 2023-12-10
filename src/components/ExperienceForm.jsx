@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function ExperienceForm({
-    employer, location, startDate, endDate, position, description, id, handleChange, handleDelete,
+    employer, location, startDate, endDate, position, description, id, handleChange, handleDelete, handleKeyDown
 }) {
+
     return (
         <form className="experience-form">
             <button className={id} onClick={handleDelete}>Delete</button>
@@ -14,6 +15,7 @@ export default function ExperienceForm({
                 className={id}
                 value={employer}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Location</label>
@@ -24,6 +26,7 @@ export default function ExperienceForm({
                 className={id}
                 value={location}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Start date</label>
@@ -34,6 +37,7 @@ export default function ExperienceForm({
                 className={id}
                 value={startDate}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">End date</label>
@@ -44,6 +48,7 @@ export default function ExperienceForm({
                 className={id}
                 value={endDate}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Position</label>
@@ -54,6 +59,7 @@ export default function ExperienceForm({
                 className={id}
                 value={position}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Description</label>
@@ -64,8 +70,9 @@ export default function ExperienceForm({
                 className={id}
                 value={description}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             ></textarea>
         </form>
-    )
+    );
 }

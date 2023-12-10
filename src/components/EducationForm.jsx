@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function EducationForm({
-    school, location, degree, date, id, handleChange, handleDelete,
+    school, location, degree, date, id, handleChange, handleDelete, handleKeyDown
 }) {
+    
     return (
         <form className="education-form">
             <button className={id} onClick={handleDelete}>Delete</button>
@@ -14,6 +15,7 @@ export default function EducationForm({
                 className={id}
                 value={school}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Location</label>
@@ -24,6 +26,7 @@ export default function EducationForm({
                 className={id}
                 value={location}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Degree</label>
@@ -34,6 +37,7 @@ export default function EducationForm({
                 className={id}
                 value={degree}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
             <label className="form-label">Date</label>
@@ -44,8 +48,9 @@ export default function EducationForm({
                 className={id}
                 value={date}
                 onChange={handleChange}
+                onKeyDown={handleKeyDown}
                 required
             />
         </form>
-    )
+    );
 }

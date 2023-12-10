@@ -8,17 +8,6 @@ export default function Education() {
         editMode: true,
     });
 
-    const handleChange = (e) => {
-        setState({
-            educationArr: state.educationArr.map(edu => {
-                return (
-                    edu.id === e.target.className ? { ...edu, [e.target.name]: e.target.value } : edu
-                );
-            }),
-            editMode: true,
-        });
-    };
-
     const handleEdit = () => {
         setState({ ...state, editMode: true });
     };
@@ -41,6 +30,17 @@ export default function Education() {
         });
     };
 
+    const handleChange = (e) => {
+        setState({
+            educationArr: state.educationArr.map(edu => {
+                return (
+                    edu.id === e.target.className ? { ...edu, [e.target.name]: e.target.value } : edu
+                );
+            }),
+            editMode: true,
+        });
+    };
+
     const handleDelete = (e) => {
         setState({
             educationArr: state.educationArr.filter(edu => {
@@ -52,11 +52,17 @@ export default function Education() {
         });
     };
 
+    const handleKeyDown = (e) => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+        }
+    };
+
     const editContainer = (
         <div className="education-edit-container">
             <div className="form-header">
                 <h2>Education</h2>
-                <button type="submit" className="submit-btn" onClick={handleSubmit}>Submit</button>
+                <button className="submit-btn" onClick={handleSubmit}>Submit</button>
             </div>
             <hr />
             <div className="form-container">
@@ -72,6 +78,7 @@ export default function Education() {
                                 id={edu.id}
                                 handleChange={handleChange}
                                 handleDelete={handleDelete}
+                                handleKeyDown={handleKeyDown}
                             />
                         </>
                     );

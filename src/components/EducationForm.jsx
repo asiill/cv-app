@@ -1,22 +1,26 @@
 import React from "react";
 
 export default function EducationForm({
-    school, location, degree, date, id, handleChange, handleDelete, handleKeyDown
+    school,
+    location,
+    degree,
+    date,
+    id,
+    handleChange,
+    handleDelete,
+    handleKeyDown,
 }) {
-    
     return (
         <form className="education-form">
-            <button className={id} onClick={handleDelete}>Delete</button>
             <label className="form-label">School</label>
             <input
                 type="text"
-                placeholder="XYX College"
+                placeholder="XYZ College"
                 name="school"
                 className={id}
                 value={school}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Location</label>
             <input
@@ -27,7 +31,6 @@ export default function EducationForm({
                 value={location}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Degree</label>
             <input
@@ -38,7 +41,6 @@ export default function EducationForm({
                 value={degree}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Date</label>
             <input
@@ -49,8 +51,8 @@ export default function EducationForm({
                 value={date}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
+            <button className={id} onClick={handleDelete}>Delete</button>
         </form>
     );
 }

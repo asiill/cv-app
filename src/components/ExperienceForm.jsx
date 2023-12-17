@@ -1,22 +1,28 @@
 import React from "react";
 
 export default function ExperienceForm({
-    employer, location, startDate, endDate, position, description, id, handleChange, handleDelete, handleKeyDown
+    employer,
+    location,
+    startDate,
+    endDate,
+    position,
+    description,
+    id,
+    handleChange,
+    handleDelete,
+    handleKeyDown,
 }) {
-
     return (
         <form className="experience-form">
-            <button className={id} onClick={handleDelete}>Delete</button>
             <label className="form-label">Employer</label>
             <input
                 type="text"
-                placeholder="XYZ Inc."
+                placeholder="XYZ"
                 name="employer"
                 className={id}
                 value={employer}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Location</label>
             <input
@@ -27,7 +33,6 @@ export default function ExperienceForm({
                 value={location}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Start date</label>
             <input
@@ -38,7 +43,6 @@ export default function ExperienceForm({
                 value={startDate}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">End date</label>
             <input
@@ -49,7 +53,6 @@ export default function ExperienceForm({
                 value={endDate}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Position</label>
             <input
@@ -60,7 +63,6 @@ export default function ExperienceForm({
                 value={position}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             />
             <label className="form-label">Description</label>
             <textarea
@@ -71,8 +73,8 @@ export default function ExperienceForm({
                 value={description}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                required
             ></textarea>
+            <button className={id} onClick={handleDelete}>Delete</button>
         </form>
     );
 }

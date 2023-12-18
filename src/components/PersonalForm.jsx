@@ -9,6 +9,7 @@ export default function PersonalForm({
 }) {
     return (
         <form className="personal-form">
+            <div className="form-row">
                 <label className="form-label">Full Name</label>
                 <input
                     type="text"
@@ -17,6 +18,8 @@ export default function PersonalForm({
                     value={name}
                     onChange={handleChange}
                 />
+            </div>
+            <div className="form-row">
                 <label className="form-label">Email</label>
                 <input
                     type="text"
@@ -25,14 +28,20 @@ export default function PersonalForm({
                     value={email}
                     onChange={handleChange}
                 />
-                <label className="form-label">Phone</label>
-                <input
-                    type="text"
-                    placeholder="5141234567"
-                    name="phone"
-                    value={phone}
-                    onChange={handleChange}
-                />
+            </div>
+            <div>
+                <div className="form-row">
+                    <label className="form-label">Phone</label>
+                    <input
+                        type="text"
+                        placeholder="5141234567"
+                        name="phone"
+                        value={phone}
+                        onChange={handleChange}
+                    />
+            </div>
+            </div>
+            <div className="form-row">
                 <label className="form-label">Location</label>
                 <input
                     type="text"
@@ -41,6 +50,7 @@ export default function PersonalForm({
                     value={location}
                     onChange={handleChange}
                 />
-            </form>
+            </div>
+        </form>
     )
 }

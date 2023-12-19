@@ -13,9 +13,6 @@ export default function EducationForm({
     return (
         <form className="education-form">
             <div className="form-row">
-                <button className={id} onClick={handleDelete}>Delete</button>
-            </div>
-            <div className="form-row">
                 <label className="form-label">School</label>
                 <input
                     type="text"
@@ -62,6 +59,9 @@ export default function EducationForm({
                     onChange={handleChange}
                     onKeyDown={handleKeyDown}
                 />
+            </div>
+            <div className="form-row">
+                <button className={id} onClick={handleDelete}>Delete</button>
             </div>
         </form>
     );

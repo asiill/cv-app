@@ -15,9 +15,6 @@ export default function ExperienceForm({
     return (
         <form className="experience-form">
             <div className="form-row">
-                <button className={id} onClick={handleDelete}>Delete</button>
-            </div>
-            <div className="form-row">
                 <label className="form-label">Employer</label>
                 <input
                     type="text"
@@ -88,6 +85,9 @@ export default function ExperienceForm({
                     onChange={handleChange}
                     onKeyDown={handleKeyDown}
                 ></textarea>
+            </div>
+            <div className="form-row">
+                <button className={id} onClick={handleDelete}>Delete</button>
             </div>
         </form>
     );

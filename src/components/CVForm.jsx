@@ -20,65 +20,59 @@ export default function CVForm({
 }) {
     return (
         <div className="cv-form">
-            <div className="cv-form-header">
-                <h1>CV generator</h1>
-                <button className="preview-btn" onClick={handleShowPreview}>Preview</button>
+            <div className="personal-form-container">
+                <h2>Personal information</h2>
+                <PersonalForm 
+                    name={personalInfo.name}
+                    location={personalInfo.location}
+                    email={personalInfo.email}
+                    phone={personalInfo.phone}
+                    handleChange={handlePersonalChange}
+                />
             </div>
-            <div className="cv-form-main">
-                <div className="personal-form-container">
-                    <h2>Personal information</h2>
-                    <PersonalForm 
-                        name={personalInfo.name}
-                        location={personalInfo.location}
-                        email={personalInfo.email}
-                        phone={personalInfo.phone}
-                        handleChange={handlePersonalChange}
-                    />
+            <div className="education-form-container">
+                <h2>Education</h2>
+                <div className="education-items">
+                    {educationInfo.educationArr.map(edu => {
+                        return (
+                            <EducationForm
+                                key={edu.id}
+                                school={edu.school}
+                                location={edu.location}
+                                degree={edu.degree}
+                                date={edu.date}
+                                id={edu.id}
+                                handleChange={handleEducationChange}
+                                handleDelete={handleEducationDelete}
+                                handleKeyDown={handleKeyDown}
+                            />
+                        );
+                    })}
                 </div>
-                <div className="education-form-container">
-                    <h2>Education</h2>
-                    <div className="education-items">
-                        {educationInfo.educationArr.map(edu => {
-                            return (
-                                <EducationForm
-                                    key={edu.id}
-                                    school={edu.school}
-                                    location={edu.location}
-                                    degree={edu.degree}
-                                    date={edu.date}
-                                    id={edu.id}
-                                    handleChange={handleEducationChange}
-                                    handleDelete={handleEducationDelete}
-                                    handleKeyDown={handleKeyDown}
-                                />
-                            );
-                        })}
-                    </div>
-                    <button className="add-education-btn" onClick={handleAddNewEducation}>Add education</button>
+                <button className="add-education-btn" onClick={handleAddNewEducation}>Add education</button>
+            </div>
+            <div className="experience-form-container">
+                <h2>Experience</h2>
+                <div className="experience-items">
+                    {experienceInfo.experienceArr.map(exp => {
+                        return (
+                            <ExperienceForm
+                                key={exp.id}
+                                employer={exp.employer}
+                                location={exp.location}
+                                startDate={exp.startDate}
+                                endDate={exp.endDate}
+                                position={exp.position}
+                                description={exp.description}
+                                id={exp.id}
+                                handleChange={handleExperienceChange}
+                                handleDelete={handleExperienceDelete}
+                                handleKeyDown={handleKeyDown}
+                            />
+                        )
+                    })}
                 </div>
-                <div className="experience-form-container">
-                    <h2>Experience</h2>
-                    <div className="experience-items">
-                        {experienceInfo.experienceArr.map(exp => {
-                            return (
-                                <ExperienceForm
-                                    key={exp.id}
-                                    employer={exp.employer}
-                                    location={exp.location}
-                                    startDate={exp.startDate}
-                                    endDate={exp.endDate}
-                                    position={exp.position}
-                                    description={exp.description}
-                                    id={exp.id}
-                                    handleChange={handleExperienceChange}
-                                    handleDelete={handleExperienceDelete}
-                                    handleKeyDown={handleKeyDown}
-                                />
-                            )
-                        })}
-                    </div>
-                    <button className="add-experience-btn" onClick={handleAddNewExperience}>Add experience</button>
-                </div>
+                <button className="add-experience-btn" onClick={handleAddNewExperience}>Add experience</button>
             </div>
         </div>
     );

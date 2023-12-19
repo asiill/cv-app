@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PersonalItem from "./PersonalItem.jsx";
 import EducationItem from "./EducationItem.jsx";
 import ExperienceItem from "./ExperienceItem.jsx";
+import "../styles/preview.css";
 
 export default class CVPreview extends Component{
         render() {

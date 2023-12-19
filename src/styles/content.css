@@ -1,39 +1,42 @@
 .preview-container {
     display: flex;
     flex-direction: column;
-
-    margin-top: 1.2rem;
-}
-
-.preview-container>.btn-container {
-    display: flex;
-    gap: 0.6rem;
-    align-self: flex-end;
 }
 
 .edit-container {
     display: flex;
     flex-direction: column;
-
-    margin-top: 1.2rem;
 }
 
-.edit-container>.btn-container { 
-    align-self: flex-end;
+.btn-container {
+    display: flex;
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+}
+
+.preview-container>.btn-container {
+    gap: 0.6rem;
+}
+
+.preview-btn {
+    background-color: rgb(26, 26, 26);
 }
 
 button {
-    border-radius: 0.3rem;
-    border: 1px solid transparent;
     padding: 0.6rem;
     font-size: 1rem;
     font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    color: rgb(255, 255, 255);
     background-color: rgb(26, 26, 26);
     cursor: pointer;
     transition: border-color 0.25s;
 }
 button:hover {
     border-color: rgb(100, 108, 255);
+    opacity: 0.8;
 }
 button:focus,
 button:focus-visible {

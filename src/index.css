@@ -2,8 +2,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(36, 36, 36);
+  color: rgb(0, 0, 0);
+  background-color: rgba(197, 206, 200, 0.945);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,19 +12,7 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
   text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

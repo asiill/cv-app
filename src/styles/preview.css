@@ -1,4 +1,12 @@
 .cv-preview{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.4rem;
     width: 210mm;
     height: 297mm;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 0.3rem;
+    background-color: rgb(213, 213, 213);
 }

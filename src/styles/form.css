@@ -9,6 +9,7 @@
     margin-top: 3rem;
     border-radius: 0.3rem;
     background-color: rgb(26, 26, 26);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
 }
 
 .add-education-btn, .add-experience-btn {

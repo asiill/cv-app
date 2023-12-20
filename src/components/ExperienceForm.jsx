@@ -77,7 +77,6 @@ export default function ExperienceForm({
             <div className="form-row">
                 <label className="form-label">Description</label>
                 <textarea
-                    type="text"
                     placeholder="Please describe your position in detail..."
                     name="description"
                     className={id}

@@ -10,56 +10,65 @@ export default class CVPreview extends Component{
 
         return (
             <div className="cv-preview">
-                <div className="cv-preview-header">
-                    <PersonalItem
-                        name={personalInfo.name}
-                        location={personalInfo.location}
-                        email={personalInfo.email}
-                        phone={personalInfo.phone}
-                    />
-                    <hr />
+                <div className="header">
+                    <h1>{personalInfo.name}</h1>
                 </div>
-                <div className="cv-preview-main">
-                    <div className="education-preview-container">
-                        <div className="section-header">
-                            <h1>Education</h1>
-                            <hr />
+                <div className="body">
+                    <div className="sidebar">
+                        <div className="personal-container">
+                            <h2>CONTACT</h2>
+                            <PersonalItem
+                                phone={personalInfo.phone}
+                                email={personalInfo.email}
+                                location={personalInfo.location}
+                                link={personalInfo.link}
+                            />
                         </div>
-                        <div className="section-content">
-                            {educationInfo.educationArr.map(edu => {
-                                return (
-                                    <EducationItem
-                                        key={edu.id}
-                                        school={edu.school}
-                                        location={edu.location}
-                                        degree={edu.degree}
-                                        date={edu.date}
-                                        id={edu.id}
-                                    />
-                                );
-                            })}
+                        <div className="education-container">
+                            <div className="section-header">
+                                <h2>EDUCATION</h2>
+                            </div>
+                            <div className="section-content">
+                                {educationInfo.educationArr.map(edu => {
+                                    return (
+                                        <EducationItem
+                                            key={edu.id}
+                                            school={edu.school}
+                                            location={edu.location}
+                                            degree={edu.degree}
+                                            date={edu.date}
+                                            id={edu.id}
+                                        />
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
-                    <div className="experience-preview-container">
-                        <div className="section-header">
-                            <h1>Experience</h1>
-                            <hr />
+                    <div className="main">
+                        <div className="summary-container">
+                            <h2>SUMMARY</h2>
+                            <p>{personalInfo.summary}</p>
                         </div>
-                        <div className="section-content">
-                            {experienceInfo.experienceArr.map(exp => {
-                                return (
-                                    <ExperienceItem
-                                        key={exp.id}
-                                        employer={exp.employer}
-                                        location={exp.location}
-                                        startDate={exp.startDate}
-                                        endDate={exp.endDate}
-                                        position={exp.position}
-                                        description={exp.description}
-                                        id={exp.id}
-                                    />
-                                );
-                            })}
+                        <div className="experience-container">
+                            <div className="section-header">
+                                <h2>EXPERIENCE</h2>
+                            </div>
+                            <div className="section-content">
+                                {experienceInfo.experienceArr.map(exp => {
+                                    return (
+                                        <ExperienceItem
+                                            key={exp.id}
+                                            employer={exp.employer}
+                                            location={exp.location}
+                                            startDate={exp.startDate}
+                                            endDate={exp.endDate}
+                                            position={exp.position}
+                                            description={exp.description}
+                                            id={exp.id}
+                                        />
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>

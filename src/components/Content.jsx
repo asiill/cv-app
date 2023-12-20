@@ -3,13 +3,14 @@ import { useReactToPrint } from 'react-to-print';
 import uniqid from "uniqid";
 import CVForm from "./CVForm.jsx";
 import CVPreview from "./CVPreview.jsx";
+import exampleInfo from "./exampleInfo.jsx";
 import "../styles/content.css";
 
 export default function Content() {
     const [editMode, setEditMode] = useState(true);
 
     const [personalInfo, setPersonalInfo] = useState({
-      name: "", email: "", phone: "", location: "",
+      name: "", phone: "", email: "", location: "", link:"", summary: "",
     });
 
     const [educationInfo, setEducationInfo] = useState({
@@ -100,6 +101,12 @@ export default function Content() {
       setEditMode(false);
     };
 
+    const handleLoadExample = () => {
+      setPersonalInfo(exampleInfo.personalInfo);
+      setEducationInfo(exampleInfo.educationInfo);
+      setExperienceInfo(exampleInfo.experienceInfo);
+    };
+
     const handleEdit = () => {
       setEditMode(true);
     };
@@ -115,6 +122,7 @@ export default function Content() {
       <div className="edit-container">
         <div className="btn-container">
           <button className="preview-btn" onClick={handleShowPreview}>Preview</button>
+          <button className="example-btn" onClick={handleLoadExample}>Example</button>
         </div>
         <CVForm
           personalInfo={personalInfo}
@@ -136,12 +144,8 @@ export default function Content() {
     const previewContainer = (
       <div className="preview-container">
         <div className="btn-container">
-          <button className="edit-btn" onClick={handleEdit}>
-            Edit
-          </button>
-          <button className="print-btn" onClick={handlePrint}>
-            Print
-          </button>
+          <button className="edit-btn" onClick={handleEdit}>Edit</button>
+          <button className="print-btn" onClick={handlePrint}>Print</button>
         </div>
         <CVPreview
           ref={componentRef}

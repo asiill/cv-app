@@ -16,7 +16,6 @@ export default function CVForm({
     handleAddNewEducation,
     handleAddNewExperience,
     handleKeyDown,
-    handleShowPreview,
 }) {
     return (
         <div className="cv-form">
@@ -24,9 +23,11 @@ export default function CVForm({
                 <h2>Personal information</h2>
                 <PersonalForm 
                     name={personalInfo.name}
-                    location={personalInfo.location}
-                    email={personalInfo.email}
                     phone={personalInfo.phone}
+                    email={personalInfo.email}
+                    location={personalInfo.location}
+                    link={personalInfo.link}
+                    summary={personalInfo.summary}
                     handleChange={handlePersonalChange}
                 />
             </div>

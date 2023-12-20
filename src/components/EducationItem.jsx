@@ -5,9 +5,9 @@ export default function EducationItem({
 }) {
     return (
         <div className="education-item">
+            <h3 className={id}>{degree}</h3>
             <p className={id}>{school}</p>
             <p className={id}>{location}</p>
-            <p className={id}>{degree}</p>
             <p className={id}>{date}</p>
         </div>
     );

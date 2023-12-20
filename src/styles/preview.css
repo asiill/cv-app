@@ -1,12 +1,68 @@
-.cv-preview{
+.cv-preview {
     display: flex;
     flex-direction: column;
 
-    gap: 2.4rem;
+    gap: 1rem;
     width: 210mm;
     height: 297mm;
     margin: auto;
     margin-top: 3rem;
+    font-size: 12px;
     border-radius: 0.3rem;
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
+}
+
+/* ----- Header styles ----- */
+
+.header {
+    border-bottom: 2px solid rgb(0, 5, 78);
+}
+
+/* ----- Body Styles ----- */
+
+.body {
+    display: flex;
+    gap: 5rem;
+}
+
+/* ----- Sidebar styles ----- */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    text-align: left;
+    padding: 1rem 1rem 1rem 5rem;
+}
+
+/* ----- Main container styles ----- */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    text-align: left;
+    padding: 1rem 5rem 1rem 1rem;
+}
+
+.education-container, .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ----- Experience item styles ----- */
+
+.details-container {
+    display: flex;
+    gap: 0.2rem;
 }

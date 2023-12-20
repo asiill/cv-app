@@ -2,15 +2,17 @@ import React from "react";
 
 export default function PersonalForm({
     name,
-    location,
-    email,
     phone,
+    email,
+    location,
+    link,
+    summary,
     handleChange,
 }) {
     return (
         <form className="personal-form">
             <div className="form-row">
-                <label className="form-label">Full Name</label>
+                <label>Full Name</label>
                 <input
                     type="text"
                     placeholder="Jane Eyre"
@@ -20,7 +22,17 @@ export default function PersonalForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Email</label>
+                <label>Phone</label>
+                <input
+                    type="text"
+                    placeholder="5141234567"
+                    name="phone"
+                    value={phone}
+                    onChange={handleChange}
+                />
+            </div>
+            <div className="form-row">
+                <label>Email</label>
                 <input
                     type="text"
                     placeholder="jane.eyre@hotmail.com"
@@ -29,25 +41,32 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div>
-                <div className="form-row">
-                    <label className="form-label">Phone</label>
-                    <input
-                        type="text"
-                        placeholder="5141234567"
-                        name="phone"
-                        value={phone}
-                        onChange={handleChange}
-                    />
-            </div>
-            </div>
             <div className="form-row">
-                <label className="form-label">Location</label>
+                <label>Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
                     name="location"
                     value={location}
+                    onChange={handleChange}
+                />
+            </div>
+            <div className="form-row">
+                <label>Link</label>
+                <input
+                    type="text"
+                    placeholder="Link to personal professional website"
+                    name="link"
+                    value={link}
+                    onChange={handleChange}
+                />
+            </div>
+            <div className="form-row">
+                <label>Summary</label>
+                <textarea
+                    placeholder="Please provide a brief professional summary..."
+                    name="summary"
+                    value={summary}
                     onChange={handleChange}
                 />
             </div>

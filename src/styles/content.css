@@ -10,18 +10,11 @@
 
 .btn-container {
     display: flex;
+    gap: 0.6rem;
     width: 100%;
     border-radius: 0.3rem;
     background-color: rgb(26, 26, 26);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.548);
-}
-
-.preview-container>.btn-container {
-    gap: 0.6rem;
-}
-
-.preview-btn {
-    background-color: rgb(26, 26, 26);
 }
 
 button {

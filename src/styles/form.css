@@ -25,7 +25,8 @@
     
     padding: 1.8rem;
     border-radius: 0.3rem;
-    background-color: rgba(197, 206, 200, 0.945);
+    color: white;
+    background-color: rgba(118, 141, 126, 0.473);
 }
 
 h2 {
@@ -60,7 +61,7 @@ input[type=text] {
     width: 60%;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    background-color: rgba(118, 141, 126, 0.473);
+    background-color: rgba(255, 255, 255, 0.822);
 }
 
 textarea {
@@ -70,7 +71,7 @@ textarea {
     font-size: 1rem;
     border-radius: 0.3rem;
     color: rgb(0, 0, 0);
-    background-color: rgba(118, 141, 126, 0.473);
+    background-color: rgba(255, 255, 255, 0.822);
 }
 
 .personal-form,.education-form, .experience-form {

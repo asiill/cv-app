@@ -25,9 +25,7 @@ export default class CVPreview extends Component{
                             />
                         </div>
                         <div className="education-container">
-                            <div className="section-header">
-                                <h2>EDUCATION</h2>
-                            </div>
+                            <h2>EDUCATION</h2>
                             <div className="section-content">
                                 {educationInfo.educationArr.map(edu => {
                                     return (
@@ -50,9 +48,7 @@ export default class CVPreview extends Component{
                             <p>{personalInfo.summary}</p>
                         </div>
                         <div className="experience-container">
-                            <div className="section-header">
-                                <h2>EXPERIENCE</h2>
-                            </div>
+                            <h2>EXPERIENCE</h2>
                             <div className="section-content">
                                 {experienceInfo.experienceArr.map(exp => {
                                     return (

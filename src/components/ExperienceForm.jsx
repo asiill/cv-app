@@ -11,11 +11,12 @@ export default function ExperienceForm({
     handleChange,
     handleDelete,
     handleKeyDown,
+    handleAddTask,
 }) {
     return (
         <form className="experience-form">
             <div className="form-row">
-                <label className="form-label">Employer</label>
+                <label>Employer</label>
                 <input
                     type="text"
                     placeholder="XYZ"
@@ -27,7 +28,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Location</label>
+                <label>Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
@@ -39,7 +40,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Start date</label>
+                <label>Start date</label>
                 <input
                     type="text"
                     placeholder="2017"
@@ -51,7 +52,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">End date</label>
+                <label>End date</label>
                 <input
                     type="text"
                     placeholder="Present"
@@ -63,7 +64,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Position</label>
+                <label>Position</label>
                 <input
                     type="text"
                     placeholder="Graphic designer"
@@ -75,7 +76,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Description</label>
+                <label>Description</label>
                 <textarea
                     placeholder="Please describe your position in detail..."
                     name="description"

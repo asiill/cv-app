@@ -30,13 +30,13 @@ const exampleInfo = {
     experienceInfo: {
         experienceArr: [
             {
-            employer: "XYZ",
-            location: "Montreal, Quebec",
-            startDate: "2020",
-            endDate: "Present",
-            position: "Graphic designer",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            id: uniqid()
+                employer: "XYZ",
+                location: "Montreal, Quebec",
+                startDate: "2020",
+                endDate: "Present",
+                position: "Graphic designer",
+                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                id: uniqid()
             },
             {
                 employer: "ABC",
@@ -55,7 +55,14 @@ const exampleInfo = {
                 position: "Graphic design intern",
                 description:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 id: uniqid()
-                },
+            },
+        ],
+    },
+    skillInfo: {
+        skillArr: [
+            {skill: "HTML, CSS", id: uniqid()},
+            {skill: "Javascript", id: uniqid()},
+            {skill: "React", id: uniqid()},
         ],
     },
 };

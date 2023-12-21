@@ -12,12 +12,12 @@
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
 }
 
-.add-education-btn, .add-experience-btn {
+.add-education-btn, .add-experience-btn, .add-skill-btn {
     width: 80%;
     align-self: center;
 }
 
-.personal-form-container, .education-form-container, .experience-form-container {
+.personal-form-container, .education-form-container, .experience-form-container, .skill-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@ h2 {
     margin: 0;
 }
 
-.education-items, .experience-items {
+.education-items, .experience-items, .skill-items {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -74,7 +74,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0.822);
 }
 
-.personal-form,.education-form, .experience-form {
+.personal-form,.education-form, .experience-form, .skill-form {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;

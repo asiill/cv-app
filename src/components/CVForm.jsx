@@ -2,19 +2,24 @@ import React from "react";
 import PersonalForm from "./PersonalForm.jsx";
 import EducationForm from "./EducationForm.jsx";
 import ExperienceForm from "./ExperienceForm.jsx";
+import SkillForm from "./SkillForm.jsx";
 import "../styles/form.css";
 
 export default function CVForm({
     personalInfo,
     educationInfo,
     experienceInfo,
+    skillInfo,
     handlePersonalChange,
     handleEducationChange,
     handleExperienceChange,
+    handleSkillChange,
     handleEducationDelete,
     handleExperienceDelete,
+    handleSkillDelete,
     handleAddNewEducation,
     handleAddNewExperience,
+    handleAddNewSkill,
     handleKeyDown,
 }) {
     return (
@@ -74,6 +79,24 @@ export default function CVForm({
                     })}
                 </div>
                 <button className="add-experience-btn" onClick={handleAddNewExperience}>Add experience</button>
+            </div>
+            <div className="skill-form-container">
+                <h2>Skills</h2>
+                <div className="skill-items">
+                    {skillInfo.skillArr.map(ski => {
+                        return (
+                            <SkillForm
+                                key={ski.id}
+                                skill={ski.skill}
+                                id={ski.id}
+                                handleChange={handleSkillChange}
+                                handleDelete={handleSkillDelete}
+                                handleKeyDown={handleKeyDown}
+                            />
+                        )
+                    })}
+                </div>
+                <button className="add-skill-btn" onClick={handleAddNewSkill}>Add skill</button>
             </div>
         </div>
     );

@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import PersonalItem from "./PersonalItem.jsx";
 import EducationItem from "./EducationItem.jsx";
 import ExperienceItem from "./ExperienceItem.jsx";
+import SkillItem from "./SkillItem.jsx";
 import "../styles/preview.css";
 
 export default class CVPreview extends Component{
         render() {
-        const { personalInfo, educationInfo, experienceInfo, } = this.props;
+        const { personalInfo, educationInfo, experienceInfo, skillInfo } = this.props;
 
         return (
             <div className="cv-preview">
@@ -26,7 +27,7 @@ export default class CVPreview extends Component{
                         </div>
                         <div className="education-container">
                             <h2>EDUCATION</h2>
-                            <div className="section-content">
+                            <div className="education-items">
                                 {educationInfo.educationArr.map(edu => {
                                     return (
                                         <EducationItem
@@ -41,6 +42,20 @@ export default class CVPreview extends Component{
                                 })}
                             </div>
                         </div>
+                        <div className="skill-container">
+                            <h2>Skills</h2>
+                            <div className="skill-items">
+                                {skillInfo.skillArr.map(ski => {
+                                    return (
+                                        <SkillItem
+                                            key={ski.id}
+                                            skill={ski.skill}
+                                            id={ski.id}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        </div>
                     </div>
                     <div className="main">
                         <div className="summary-container">
@@ -49,7 +64,7 @@ export default class CVPreview extends Component{
                         </div>
                         <div className="experience-container">
                             <h2>EXPERIENCE</h2>
-                            <div className="section-content">
+                            <div className="experience-items">
                                 {experienceInfo.experienceArr.map(exp => {
                                     return (
                                         <ExperienceItem

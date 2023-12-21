@@ -13,7 +13,7 @@ export default function EducationForm({
     return (
         <form className="education-form">
             <div className="form-row">
-                <label className="form-label">School</label>
+                <label>School</label>
                 <input
                     type="text"
                     placeholder="XYZ College"
@@ -25,7 +25,7 @@ export default function EducationForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Location</label>
+                <label>Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
@@ -37,7 +37,7 @@ export default function EducationForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Degree</label>
+                <label>Degree</label>
                 <input
                     type="text"
                     placeholder="DEC in Biology"
@@ -49,7 +49,7 @@ export default function EducationForm({
                 />
             </div>
             <div className="form-row">
-                <label className="form-label">Date</label>
+                <label>Date</label>
                 <input
                     type="text"
                     placeholder="2017"

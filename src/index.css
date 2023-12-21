@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;

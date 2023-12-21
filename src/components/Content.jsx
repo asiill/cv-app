@@ -21,6 +21,10 @@ export default function Content() {
       experienceArr: [{employer: "", location: "", startDate: "", endDate: "", position: "", description: "", id: uniqid()}],
     });
 
+    const [skillInfo, setSkillInfo] = useState({
+      skillArr: [{skill: "", id: uniqid()}],
+    });
+
     const handlePersonalChange = (e) => {
       setPersonalInfo({ ...personalInfo, [e.target.name]: e.target.value });
     };
@@ -45,6 +49,16 @@ export default function Content() {
       });
     };
 
+    const handleSkillChange = (e) => {
+      setSkillInfo({
+        skillArr: skillInfo.skillArr.map(ski => {
+            return (
+                ski.id === e.target.className ? { ...ski, [e.target.name]: e.target.value } : ski
+            );
+        }),
+      });
+    };
+
     const handleEducationDelete = (e) => {
       setEducationInfo({
         educationArr: educationInfo.educationArr.filter(edu => {
@@ -60,6 +74,16 @@ export default function Content() {
         experienceArr: experienceInfo.experienceArr.filter(ex => {
             return (
                 ex.id !== e.target.className
+            );
+        }),
+      });
+    };
+
+    const handleSkillDelete = (e) => {
+      setSkillInfo({
+        skillArr: skillInfo.skillArr.filter(ski => {
+            return (
+                ski.id !== e.target.className
             );
         }),
       });
@@ -91,6 +115,15 @@ export default function Content() {
       });
     };
 
+    const handleAddNewSkill = () => {
+      setSkillInfo({
+        skillArr: skillInfo.skillArr.concat({
+          skill: "",
+          id: uniqid(),
+        }),
+      });
+    };
+
     const handleKeyDown = (e) => {
       if (e.keyCode === 13) {
         e.preventDefault();
@@ -105,6 +138,7 @@ export default function Content() {
       setPersonalInfo(exampleInfo.personalInfo);
       setEducationInfo(exampleInfo.educationInfo);
       setExperienceInfo(exampleInfo.experienceInfo);
+      setSkillInfo(exampleInfo.skillInfo);
     };
 
     const handleEdit = () => {
@@ -128,13 +162,17 @@ export default function Content() {
           personalInfo={personalInfo}
           educationInfo={educationInfo}
           experienceInfo={experienceInfo}
+          skillInfo={skillInfo}
           handlePersonalChange={handlePersonalChange}
           handleEducationChange={handleEducationChange}
           handleExperienceChange={handleExperienceChange}
+          handleSkillChange={handleSkillChange}
           handleEducationDelete={handleEducationDelete}
           handleExperienceDelete={handleExperienceDelete}
+          handleSkillDelete={handleSkillDelete}
           handleAddNewEducation={handleAddNewEducation}
           handleAddNewExperience={handleAddNewExperience}
+          handleAddNewSkill={handleAddNewSkill}
           handleKeyDown={handleKeyDown}
           handleShowPreview={handleShowPreview}
         />
@@ -152,6 +190,7 @@ export default function Content() {
           personalInfo={personalInfo}
           educationInfo={educationInfo}
           experienceInfo={experienceInfo}
+          skillInfo={skillInfo}
         />
       </div>
     );

@@ -48,13 +48,13 @@
     padding: 1rem 5rem 1rem 1rem;
 }
 
-.personal-container, .summary-container, .education-container, .experience-container {
+.personal-container, .summary-container, .education-container, .experience-container, .skill-container {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
 
-.section-content {
+.education-items, .experience-items, .skill-items {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;

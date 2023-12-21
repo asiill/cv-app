@@ -1,8 +1,8 @@
-# React + Vite
+# React CV App
+A cv creation app built using React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo
+https://asiill.github.io/cv-app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
+![cv-app-screenshot](https://github.com/asiill/cv-app/assets/9745019/f89ea948-5336-4cd1-bc49-8a48bb4e2c92)

@@ -23,7 +23,7 @@
 
 .body {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 /* ----- Sidebar styles ----- */
@@ -34,7 +34,7 @@
     gap: 1rem;
 
     text-align: left;
-    padding: 1rem 1rem 1rem 5rem;
+    padding: 1rem 1rem 1rem 3rem;
 }
 
 /* ----- Main container styles ----- */
@@ -45,7 +45,7 @@
     gap: 1rem;
     
     text-align: left;
-    padding: 1rem 5rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
 }
 
 .personal-container, .summary-container, .education-container, .experience-container, .skill-container {

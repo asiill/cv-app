@@ -32,7 +32,3 @@ button:hover {
     border-color: rgb(100, 108, 255);
     opacity: 0.8;
 }
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}

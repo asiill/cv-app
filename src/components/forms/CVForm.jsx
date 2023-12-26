@@ -3,7 +3,7 @@ import PersonalForm from "./PersonalForm.jsx";
 import EducationForm from "./EducationForm.jsx";
 import ExperienceForm from "./ExperienceForm.jsx";
 import SkillForm from "./SkillForm.jsx";
-import "../styles/form.css";
+import "../../styles/form.css";
 
 export default function CVForm({
     personalInfo,

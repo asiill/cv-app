@@ -3,7 +3,7 @@ import PersonalItem from "./PersonalItem.jsx";
 import EducationItem from "./EducationItem.jsx";
 import ExperienceItem from "./ExperienceItem.jsx";
 import SkillItem from "./SkillItem.jsx";
-import "../styles/preview.css";
+import "../../styles/preview.css";
 
 export default class CVPreview extends Component{
         render() {

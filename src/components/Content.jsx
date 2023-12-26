@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { useReactToPrint } from 'react-to-print';
 import uniqid from "uniqid";
-import CVForm from "./CVForm.jsx";
-import CVPreview from "./CVPreview.jsx";
+import CVForm from "./forms/CVForm.jsx";
+import CVPreview from "./preview/CVPreview.jsx";
 import exampleInfo from "./exampleInfo.jsx";
 import "../styles/content.css";
 

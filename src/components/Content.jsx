@@ -5,6 +5,11 @@ import CVForm from "./forms/CVForm.jsx";
 import CVPreview from "./preview/CVPreview.jsx";
 import exampleInfo from "./exampleInfo.jsx";
 import "../styles/content.css";
+// Button icons
+import previewImg from "../icons/preview.svg";
+import editImg from "../icons/edit.svg";
+import printImg from "../icons/print.svg";
+import loadImg from "../icons/load.svg";
 
 export default function Content() {
     const [editMode, setEditMode] = useState(true);
@@ -155,8 +160,8 @@ export default function Content() {
     const editContainer = (
       <div className="edit-container">
         <div className="btn-container">
-          <button className="preview-btn" onClick={handleShowPreview}>Preview</button>
-          <button className="example-btn" onClick={handleLoadExample}>Example</button>
+          <button className="preview-btn" onClick={handleShowPreview}><img src={previewImg} title="Show preview" alt="Show preview"/></button>
+          <button className="example-btn" onClick={handleLoadExample}><img src={loadImg} title="Load example" alt="Load example" /></button>
         </div>
         <CVForm
           personalInfo={personalInfo}
@@ -182,8 +187,8 @@ export default function Content() {
     const previewContainer = (
       <div className="preview-container">
         <div className="btn-container">
-          <button className="edit-btn" onClick={handleEdit}>Edit</button>
-          <button className="print-btn" onClick={handlePrint}>Print</button>
+          <button className="edit-btn" onClick={handleEdit}><img src={editImg} title="Edit CV" alt="Edit CV" /></button>
+          <button className="print-btn" onClick={handlePrint}><img src={printImg} title="Print CV" alt="Print CV"/></button>
         </div>
         <CVPreview
           ref={componentRef}

@@ -9,6 +9,7 @@ export default function EducationForm({
     handleChange,
     handleDelete,
     handleKeyDown,
+    delImg,
 }) {
     return (
         <form className="education-form">
@@ -61,7 +62,10 @@ export default function EducationForm({
                 />
             </div>
             <div className="form-row">
-                <button className={id} onClick={handleDelete}>Delete</button>
+                <button className={id} onClick={handleDelete}>
+                    <span>Delete</span>
+                    <img src={delImg} title="Delete education" alt="Delete education" />
+                </button>
             </div>
         </form>
     );

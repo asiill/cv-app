@@ -6,6 +6,7 @@ export default function SkillForm({
     handleChange,
     handleDelete,
     handleKeyDown,
+    delImg,
 }) {
     return (
         <form className="skill-form">
@@ -21,7 +22,10 @@ export default function SkillForm({
                 />
             </div>
             <div className="form-row">
-                <button className={id} onClick={handleDelete}>Delete</button>
+                <button className={id} onClick={handleDelete}>
+                    <span>Delete</span>
+                    <img src={delImg} title="Delete skill" alt="Delete skill" />
+                </button>
             </div>
         </form>
     );

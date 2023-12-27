@@ -17,12 +17,16 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.548);
 }
 
-img {
-    width: 40px;
-    height: 40px;
+.preview-btn>img, .example-btn>img, .edit-btn>img, .print-btn>img {
+    width: 2rem;
+    height: 2rem;
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     padding: 0.6rem;
     font-size: 1rem;
     font-weight: 500;

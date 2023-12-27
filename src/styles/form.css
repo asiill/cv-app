@@ -79,3 +79,12 @@ textarea {
     flex-direction: column;
     gap: 0.3rem;
 }
+
+button {
+    gap: 1rem;
+}
+
+button>img {
+    width: 1.4rem;
+    height: 1.4rem;
+}

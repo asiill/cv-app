@@ -4,6 +4,8 @@ import EducationForm from "./EducationForm.jsx";
 import ExperienceForm from "./ExperienceForm.jsx";
 import SkillForm from "./SkillForm.jsx";
 import "../../styles/form.css";
+import delImg from "../../icons/delete.svg";
+import addImg from "../../icons/add.svg";
 
 export default function CVForm({
     personalInfo,
@@ -51,11 +53,15 @@ export default function CVForm({
                                 handleChange={handleEducationChange}
                                 handleDelete={handleEducationDelete}
                                 handleKeyDown={handleKeyDown}
+                                delImg={delImg}
                             />
                         );
                     })}
                 </div>
-                <button className="add-education-btn" onClick={handleAddNewEducation}>Add education</button>
+                <button className="add-education-btn" onClick={handleAddNewEducation}>
+                    <img src={addImg} title="Add education" alt="Add education" />
+                    <span>Add education</span>
+                </button>
             </div>
             <div className="experience-form-container">
                 <h2>Experience</h2>
@@ -74,11 +80,15 @@ export default function CVForm({
                                 handleChange={handleExperienceChange}
                                 handleDelete={handleExperienceDelete}
                                 handleKeyDown={handleKeyDown}
+                                delImg={delImg}
                             />
                         )
                     })}
                 </div>
-                <button className="add-experience-btn" onClick={handleAddNewExperience}>Add experience</button>
+                <button className="add-experience-btn" onClick={handleAddNewExperience}>
+                    <img src={addImg} title="Add experience" alt="Add experience" />
+                    <span>Add experience</span>
+                </button>
             </div>
             <div className="skill-form-container">
                 <h2>Skills</h2>
@@ -92,11 +102,15 @@ export default function CVForm({
                                 handleChange={handleSkillChange}
                                 handleDelete={handleSkillDelete}
                                 handleKeyDown={handleKeyDown}
+                                delImg={delImg}
                             />
                         )
                     })}
                 </div>
-                <button className="add-skill-btn" onClick={handleAddNewSkill}>Add skill</button>
+                <button className="add-skill-btn" onClick={handleAddNewSkill}>
+                    <img src={addImg} title="Add skill" alt="Add skill" />
+                    Add skill
+                </button>
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ export default function ExperienceForm({
     handleChange,
     handleDelete,
     handleKeyDown,
-    handleAddTask,
+    delImg,
 }) {
     return (
         <form className="experience-form">
@@ -87,7 +87,10 @@ export default function ExperienceForm({
                 ></textarea>
             </div>
             <div className="form-row">
-                <button className={id} onClick={handleDelete}>Delete</button>
+                <button className={id} onClick={handleDelete}>
+                    <span>Delete</span>
+                    <img src={delImg} title="Delete experience" alt="Delete experience" />
+                </button>
             </div>
         </form>
     );

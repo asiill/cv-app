@@ -17,6 +17,11 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.548);
 }
 
+img {
+    width: 40px;
+    height: 40px;
+}
+
 button {
     padding: 0.6rem;
     font-size: 1rem;

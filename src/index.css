@@ -3,7 +3,7 @@
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);
-  background-color: #a3b18a;
+  background-color: rgb(163, 177, 138);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,6 +16,10 @@ h1 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   min-width: 320px;
   min-height: 100vh;
   text-align: center;

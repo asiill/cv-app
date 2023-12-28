@@ -42,7 +42,8 @@ export default function ExperienceForm({
             <div className="form-row">
                 <label>Start date</label>
                 <input
-                    type="text"
+                    type="number"
+                    min="1900"
                     placeholder="2017"
                     name="startDate"
                     className={id}
@@ -54,7 +55,8 @@ export default function ExperienceForm({
             <div className="form-row">
                 <label>End date</label>
                 <input
-                    type="text"
+                    type="number"
+                    min="1900"
                     placeholder="Present"
                     name="endDate"
                     className={id}

@@ -1,4 +1,4 @@
-.cv-form {
+#cv-form {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -12,11 +12,9 @@
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
 }
 
-.add-education-btn, .add-experience-btn, .add-skill-btn {
-    flex: 1;
-}
+/* ----- Form container styles ----- */
 
-.personal-form-container, .education-form-container, .experience-form-container, .skill-form-container {
+#personal-form-container, #education-form-container, #experience-form-container, #skill-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +30,20 @@ h2 {
     margin: 0;
 }
 
-.education-items, .experience-items, .skill-items {
+#education-items, #experience-items, #skill-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.8rem;
+}
+
+/* ----- Form styles ----- */
+
+.personal-form,.education-form, .experience-form, .skill-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
 }
 
 .form-row {
@@ -72,12 +79,7 @@ textarea {
     background-color: rgb(218, 215, 205);
 }
 
-.personal-form,.education-form, .experience-form, .skill-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.3rem;
-}
+/* ----- Button styles ----- */
 
 button {
     gap: 1rem;
@@ -88,8 +90,14 @@ button>img {
     height: 1.4rem;
 }
 
+#add-education-btn, #add-experience-btn, #add-skill-btn {
+    flex: 1;
+}
+
+/* ----- Media queries ----- */
+
 @media screen and (max-width: 600px) {
-    .cv-form {
+    #cv-form {
         max-width: 90%;
     }
 }

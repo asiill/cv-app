@@ -1,4 +1,4 @@
-.cv-preview {
+#cv-preview {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -14,20 +14,20 @@
 
 /* ----- Header styles ----- */
 
-.header {
+#header {
     border-bottom: 2px solid rgb(0, 5, 78);
 }
 
 /* ----- Body Styles ----- */
 
-.body {
+#body {
     display: flex;
     gap: 2rem;
 }
 
 /* ----- Sidebar styles ----- */
 
-.sidebar {
+#sidebar {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -38,7 +38,7 @@
 
 /* ----- Main container styles ----- */
 
-.main {
+#main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -47,27 +47,29 @@
     padding: 1rem 3rem 1rem 1rem;
 }
 
-.personal-container, .summary-container, .education-container, .experience-container, .skill-container {
+#personal-container, #summary-container, #education-container, #experience-container, #skill-container {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
 
-.education-items, .experience-items, .skill-items {
+#education-items, #experience-items, #skill-items {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
 }
 
+/* ----- Media queries ----- */
+
 @media screen and (min-width: 601px) {
-    .cv-preview {
+    #cv-preview {
         height: 297mm;
         overflow-y: auto;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .cv-preview {
+    #cv-preview {
         max-width: 90%;
         max-height: none;
     }

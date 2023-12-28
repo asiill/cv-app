@@ -158,11 +158,11 @@ export default function Content() {
     });
 
     const editContainer = (
-      <div className="edit-container">
-        <div className="btn-container">
-          <button className="preview-btn" onClick={handleShowPreview}><img src={previewImg} title="Show preview" alt="Show preview"/></button>
-          <button className="example-btn" onClick={handleLoadExample}><img src={loadImg} title="Load example" alt="Load example" /></button>
-        </div>
+      <main id="edit-container">
+        <nav className="btn-container">
+          <button id="preview-btn" onClick={handleShowPreview}><img src={previewImg} title="Show preview" alt="Show preview"/></button>
+          <button id="example-btn" onClick={handleLoadExample}><img src={loadImg} title="Load example" alt="Load example" /></button>
+        </nav>
         <CVForm
           personalInfo={personalInfo}
           educationInfo={educationInfo}
@@ -181,15 +181,15 @@ export default function Content() {
           handleKeyDown={handleKeyDown}
           handleShowPreview={handleShowPreview}
         />
-      </div>
+      </main>
     );
 
     const previewContainer = (
-      <div className="preview-container">
-        <div className="btn-container">
-          <button className="edit-btn" onClick={handleEdit}><img src={editImg} title="Edit CV" alt="Edit CV" /></button>
-          <button className="print-btn" onClick={handlePrint}><img src={printImg} title="Print CV" alt="Print CV"/></button>
-        </div>
+      <main id="preview-container">
+        <nav className="btn-container">
+          <button id="edit-btn" onClick={handleEdit}><img src={editImg} title="Edit CV" alt="Edit CV" /></button>
+          <button id="print-btn" onClick={handlePrint}><img src={printImg} title="Print CV" alt="Print CV"/></button>
+        </nav>
         <CVPreview
           ref={componentRef}
           personalInfo={personalInfo}
@@ -197,7 +197,7 @@ export default function Content() {
           experienceInfo={experienceInfo}
           skillInfo={skillInfo}
         />
-      </div>
+      </main>
     );
 
     return (

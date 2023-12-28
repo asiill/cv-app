@@ -10,13 +10,13 @@ export default class CVPreview extends Component{
         const { personalInfo, educationInfo, experienceInfo, skillInfo } = this.props;
 
         return (
-            <div className="cv-preview">
-                <div className="header">
+            <section id="cv-preview">
+                <div id="header">
                     <h1>{personalInfo.name}</h1>
                 </div>
-                <div className="body">
-                    <div className="sidebar">
-                        <div className="personal-container">
+                <div id="body">
+                    <div id="sidebar">
+                        <div id="personal-container">
                             <h2>CONTACT</h2>
                             <PersonalItem
                                 phone={personalInfo.phone}
@@ -25,9 +25,9 @@ export default class CVPreview extends Component{
                                 link={personalInfo.link}
                             />
                         </div>
-                        <div className="education-container">
+                        <div id="education-container">
                             <h2>EDUCATION</h2>
-                            <div className="education-items">
+                            <div id="education-items">
                                 {educationInfo.educationArr.map(edu => {
                                     return (
                                         <EducationItem
@@ -42,9 +42,9 @@ export default class CVPreview extends Component{
                                 })}
                             </div>
                         </div>
-                        <div className="skill-container">
+                        <div id="skill-container">
                             <h2>Skills</h2>
-                            <div className="skill-items">
+                            <div id="skill-items">
                                 {skillInfo.skillArr.map(ski => {
                                     return (
                                         <SkillItem
@@ -57,14 +57,14 @@ export default class CVPreview extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="main">
-                        <div className="summary-container">
+                    <div id="main">
+                        <div id="summary-container">
                             <h2>SUMMARY</h2>
                             <p>{personalInfo.summary}</p>
                         </div>
-                        <div className="experience-container">
+                        <div id="experience-container">
                             <h2>EXPERIENCE</h2>
-                            <div className="experience-items">
+                            <div id="experience-items">
                                 {experienceInfo.experienceArr.map(exp => {
                                     return (
                                         <ExperienceItem
@@ -83,7 +83,7 @@ export default class CVPreview extends Component{
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

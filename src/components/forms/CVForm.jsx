@@ -25,8 +25,8 @@ export default function CVForm({
     handleKeyDown,
 }) {
     return (
-        <div className="cv-form">
-            <div className="personal-form-container">
+        <section id="cv-form">
+            <div id="personal-form-container">
                 <h2>Personal information</h2>
                 <PersonalForm 
                     name={personalInfo.name}
@@ -38,9 +38,9 @@ export default function CVForm({
                     handleChange={handlePersonalChange}
                 />
             </div>
-            <div className="education-form-container">
+            <div id="education-form-container">
                 <h2>Education</h2>
-                <div className="education-items">
+                <div id="education-items">
                     {educationInfo.educationArr.map(edu => {
                         return (
                             <EducationForm
@@ -58,14 +58,14 @@ export default function CVForm({
                         );
                     })}
                 </div>
-                <button className="add-education-btn" onClick={handleAddNewEducation}>
+                <button id="add-education-btn" onClick={handleAddNewEducation}>
                     <img src={addImg} title="Add education" alt="Add education" />
                     <span>Add education</span>
                 </button>
             </div>
-            <div className="experience-form-container">
+            <div id="experience-form-container">
                 <h2>Experience</h2>
-                <div className="experience-items">
+                <div id="experience-items">
                     {experienceInfo.experienceArr.map(exp => {
                         return (
                             <ExperienceForm
@@ -85,14 +85,14 @@ export default function CVForm({
                         )
                     })}
                 </div>
-                <button className="add-experience-btn" onClick={handleAddNewExperience}>
+                <button id="add-experience-btn" onClick={handleAddNewExperience}>
                     <img src={addImg} title="Add experience" alt="Add experience" />
                     <span>Add experience</span>
                 </button>
             </div>
-            <div className="skill-form-container">
+            <div id="skill-form-container">
                 <h2>Skills</h2>
-                <div className="skill-items">
+                <div id="skill-items">
                     {skillInfo.skillArr.map(ski => {
                         return (
                             <SkillForm
@@ -107,11 +107,11 @@ export default function CVForm({
                         )
                     })}
                 </div>
-                <button className="add-skill-btn" onClick={handleAddNewSkill}>
+                <button id="add-skill-btn" onClick={handleAddNewSkill}>
                     <img src={addImg} title="Add skill" alt="Add skill" />
                     Add skill
                 </button>
             </div>
-        </div>
+        </section>
     );
 }

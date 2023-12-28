@@ -55,7 +55,7 @@ export default function PersonalForm({
                 <label>Link</label>
                 <input
                     type="text"
-                    placeholder="Link to personal professional website"
+                    placeholder="https://www.link-to-portfolio.com"
                     name="link"
                     value={link}
                     onChange={handleChange}

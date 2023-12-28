@@ -24,7 +24,7 @@ export default function PersonalForm({
             <div className="form-row">
                 <label>Phone</label>
                 <input
-                    type="text"
+                    type="tel"
                     placeholder="5141234567"
                     name="phone"
                     value={phone}
@@ -34,7 +34,7 @@ export default function PersonalForm({
             <div className="form-row">
                 <label>Email</label>
                 <input
-                    type="text"
+                    type="email"
                     placeholder="jane.eyre@hotmail.com"
                     name="email"
                     value={email}
@@ -54,7 +54,7 @@ export default function PersonalForm({
             <div className="form-row">
                 <label>Link</label>
                 <input
-                    type="text"
+                    type="url"
                     placeholder="https://www.link-to-portfolio.com"
                     name="link"
                     value={link}

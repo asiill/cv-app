@@ -52,7 +52,8 @@ export default function EducationForm({
             <div className="form-row">
                 <label>Date</label>
                 <input
-                    type="text"
+                    type="number"
+                    min="1900"
                     placeholder="2017"
                     name="date"
                     className={id}

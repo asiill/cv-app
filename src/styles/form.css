@@ -60,7 +60,7 @@ label {
     margin-right: 1rem;
 }
 
-input[type=text] {
+input {
     flex: 1;
     border-radius: 0.3rem;
     padding: 0.3rem;

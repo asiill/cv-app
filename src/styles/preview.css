@@ -61,16 +61,22 @@
 
 /* ----- Media queries ----- */
 
-@media screen and (min-width: 601px) {
-    #cv-preview {
-        height: 297mm;
-        overflow-y: auto;
-    }
-}
-
 @media screen and (max-width: 600px) {
     #cv-preview {
         max-width: 90%;
         max-height: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #cv-preview {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #cv-preview {
+        height: 297mm;
+        overflow-y: auto;
     }
 }

@@ -77,7 +77,14 @@
 }
 
 @media print {
+    html, body {
+        height: 100%;
+        margin: 0!important;
+    }
+
     #cv-preview {
         margin: 0;
+        width: 210mm;
+        height: 297mm;
     }
 }

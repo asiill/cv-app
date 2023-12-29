@@ -1,13 +1,14 @@
 #cv-preview {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 
+    align-self: center;
     max-width: 210mm;
     min-height: 297mm;
     margin: auto;
     margin-top: 3rem;
-    padding: 0.3rem;
+    padding: 0 2rem 0 2rem;
     font-size: 0.8rem;
     border-radius: 0.3rem;
     background-color: rgb(255, 255, 255);
@@ -35,7 +36,7 @@
     gap: 1rem;
 
     text-align: left;
-    padding: 1rem 1rem 1rem 3rem;
+    
 }
 
 /* ----- Main container styles ----- */
@@ -46,7 +47,7 @@
     gap: 1rem;
     
     text-align: left;
-    padding: 1rem 3rem 1rem 1rem;
+    
 }
 
 #personal-container, #summary-container, #education-container, #experience-container, #skill-container {

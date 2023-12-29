@@ -16,10 +16,11 @@ export default function ExperienceForm({
     return (
         <form className="experience-form">
             <div className="form-row">
-                <label>Employer</label>
+                <label for="employer">Employer</label>
                 <input
                     type="text"
                     placeholder="XYZ"
+                    id="employer"
                     name="employer"
                     className={id}
                     value={employer}
@@ -28,10 +29,11 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label>Location</label>
+                <label for="location">Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
+                    id="location"
                     name="location"
                     className={id}
                     value={location}
@@ -40,11 +42,12 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label>Start date</label>
+                <label for="startDate">Start date</label>
                 <input
                     type="number"
                     min="1900"
                     placeholder="2017"
+                    id="startDate"
                     name="startDate"
                     className={id}
                     value={startDate}
@@ -53,11 +56,12 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label>End date</label>
+                <label for="endDate">End date</label>
                 <input
                     type="number"
                     min="1900"
                     placeholder="Present"
+                    id="endDate"
                     name="endDate"
                     className={id}
                     value={endDate}
@@ -66,10 +70,11 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label>Position</label>
+                <label for="positions">Position</label>
                 <input
                     type="text"
                     placeholder="Graphic designer"
+                    id="position"
                     name="position"
                     className={id}
                     value={position}
@@ -78,9 +83,10 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label>Description</label>
+                <label for="description">Description</label>
                 <textarea
                     placeholder="Please describe your position in detail..."
+                    id="description"
                     name="description"
                     className={id}
                     value={description}

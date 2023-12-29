@@ -11,9 +11,10 @@ export default function SkillForm({
     return (
         <form className="skill-form">
             <div className="form-row">
-                <label>Skill</label>
+                <label for="skill">Skill</label>
                 <input
                     type="text"
+                    id="skill"
                     name="skill"
                     className={id}
                     value={skill}

@@ -59,7 +59,7 @@ export default function CVForm({
                     })}
                 </div>
                 <button id="add-education-btn" onClick={handleAddNewEducation}>
-                    <img src={addImg} title="Add education" alt="Add education" />
+                    <img src={addImg} alt="" />
                     <span>Add education</span>
                 </button>
             </div>
@@ -86,7 +86,7 @@ export default function CVForm({
                     })}
                 </div>
                 <button id="add-experience-btn" onClick={handleAddNewExperience}>
-                    <img src={addImg} title="Add experience" alt="Add experience" />
+                    <img src={addImg} alt="" />
                     <span>Add experience</span>
                 </button>
             </div>
@@ -108,7 +108,7 @@ export default function CVForm({
                     })}
                 </div>
                 <button id="add-skill-btn" onClick={handleAddNewSkill}>
-                    <img src={addImg} title="Add skill" alt="Add skill" />
+                    <img src={addImg} alt="" />
                     Add skill
                 </button>
             </div>

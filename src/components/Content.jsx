@@ -160,8 +160,8 @@ export default function Content() {
     const editContainer = (
       <main id="edit-container">
         <nav className="btn-container">
-          <button id="preview-btn" onClick={handleShowPreview}><img src={previewImg} title="Show preview" alt="Show preview"/></button>
-          <button id="example-btn" onClick={handleLoadExample}><img src={loadImg} title="Load example" alt="Load example" /></button>
+          <button id="preview-btn" onClick={handleShowPreview}><img src={previewImg} title="Show preview" alt="" /></button>
+          <button id="example-btn" onClick={handleLoadExample}><img src={loadImg} title="Load example" alt="" /></button>
         </nav>
         <CVForm
           personalInfo={personalInfo}
@@ -187,8 +187,8 @@ export default function Content() {
     const previewContainer = (
       <main id="preview-container">
         <nav className="btn-container">
-          <button id="edit-btn" onClick={handleEdit}><img src={editImg} title="Edit CV" alt="Edit CV" /></button>
-          <button id="print-btn" onClick={handlePrint}><img src={printImg} title="Print CV" alt="Print CV"/></button>
+          <button id="edit-btn" onClick={handleEdit}><img src={editImg} title="Edit CV" alt="Edit document" /></button>
+          <button id="print-btn" onClick={handlePrint}><img src={printImg} title="Print CV" alt="Print document" /></button>
         </nav>
         <CVPreview
           ref={componentRef}

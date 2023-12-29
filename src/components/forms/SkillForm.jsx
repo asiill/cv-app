@@ -25,7 +25,7 @@ export default function SkillForm({
             <div className="form-row">
                 <button className={id} onClick={handleDelete}>
                     <span>Delete</span>
-                    <img src={delImg} title="Delete skill" alt="Delete skill" />
+                    <img src={delImg} alt="" />
                 </button>
             </div>
         </form>

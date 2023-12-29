@@ -69,7 +69,7 @@ export default function EducationForm({
             <div className="form-row">
                 <button className={id} onClick={handleDelete}>
                     <span>Delete</span>
-                    <img src={delImg} title="Delete education" alt="Delete education" />
+                    <img src={delImg} alt="" />
                 </button>
             </div>
         </form>

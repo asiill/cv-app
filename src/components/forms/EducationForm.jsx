@@ -27,12 +27,12 @@ export default function EducationForm({
                 />
             </div>
             <div className="form-row">
-                <label for="location">Location</label>
+                <label for="schoolLocation">Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
-                    id="location"
-                    name="location"
+                    id="schoolLocation"
+                    name="schoolLocation"
                     className={id}
                     value={location}
                     onChange={handleChange}

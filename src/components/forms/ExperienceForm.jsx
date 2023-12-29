@@ -29,12 +29,12 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label for="location">Location</label>
+                <label for="workLocation">Location</label>
                 <input
                     type="text"
                     placeholder="Montreal, Quebec"
-                    id="location"
-                    name="location"
+                    id="workLocation"
+                    name="workLocation"
                     className={id}
                     value={location}
                     onChange={handleChange}
@@ -70,7 +70,7 @@ export default function ExperienceForm({
                 />
             </div>
             <div className="form-row">
-                <label for="positions">Position</label>
+                <label for="position">Position</label>
                 <input
                     type="text"
                     placeholder="Graphic designer"

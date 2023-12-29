@@ -45,3 +45,9 @@ button:hover {
     border-color: rgb(100, 108, 255);
     opacity: 0.8;
 }
+
+@media screen and (max-width:600px) {
+    .btn-container {
+        flex-direction: column;
+    }
+}

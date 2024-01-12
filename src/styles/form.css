@@ -1,14 +1,13 @@
 #cv-form {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1rem;
     
     padding: 0.3rem;
     margin: auto;
     margin-top: 3rem;
     border-radius: 0.3rem;
-    background-color: rgb(26, 26, 26);
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
+    
 }
 
 /* ----- Form container styles ----- */
@@ -17,12 +16,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 1rem;
     
     padding: 1.8rem;
     border-radius: 0.3rem;
     color: rgb(0, 0, 0);
     background-color: rgb(163, 177, 138);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.548);
 }
 
 h2 {
@@ -33,7 +33,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.8rem;
 }
 
 /* ----- Form styles ----- */
@@ -42,25 +41,23 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
+
+    text-align: start;
+}
+
+.education-form, .experience-form, .skill-form {
+    margin-bottom: 1rem;
 }
 
 .form-row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.form-row>button {
-    flex: 1;
-}
-
-label {
-    margin-right: 1rem;
+    gap: 0.2rem;
 }
 
 input {
-    flex: 1;
     border-radius: 0.3rem;
     padding: 0.3rem;
     font-size: 1rem;
@@ -69,13 +66,13 @@ input {
 }
 
 textarea {
-    flex: 1;
     height: 4.8rem;
     padding: 0.3rem;
     font-size: 1rem;
     border-radius: 0.3rem;
     color: rgb(0, 0, 0);
     background-color: rgb(218, 215, 205);
+    resize: vertical;
 }
 
 /* ----- Button styles ----- */
@@ -87,10 +84,6 @@ button {
 button>img {
     width: 1.4rem;
     height: 1.4rem;
-}
-
-#add-education-btn, #add-experience-btn, #add-skill-btn {
-    flex: 1;
 }
 
 /* ----- Media queries ----- */

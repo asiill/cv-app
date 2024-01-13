@@ -14,8 +14,8 @@ export default function ExperienceForm({
     delImg,
 }) {
     return (
-        <form className="experience-form">
-            <div className="form-row">
+        <form className="mb-4 flex flex-col justify-center gap-2 text-start">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="employer">Employer</label>
                 <input
                     type="text"
@@ -28,7 +28,7 @@ export default function ExperienceForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="workLocation">Location</label>
                 <input
                     type="text"
@@ -41,7 +41,7 @@ export default function ExperienceForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="startDate">Start date</label>
                 <input
                     type="number"
@@ -55,7 +55,7 @@ export default function ExperienceForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="endDate">End date</label>
                 <input
                     type="number"
@@ -69,7 +69,7 @@ export default function ExperienceForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="position">Position</label>
                 <input
                     type="text"
@@ -82,7 +82,7 @@ export default function ExperienceForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="description">Description</label>
                 <textarea
                     placeholder="Please describe your position in detail..."
@@ -91,10 +91,9 @@ export default function ExperienceForm({
                     className={id}
                     value={description}
                     onChange={handleChange}
-                    onKeyDown={handleKeyDown}
                 ></textarea>
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <button className={id} onClick={handleDelete}>
                     <span>Delete</span>
                     <img src={delImg} alt="" />

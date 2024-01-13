@@ -4,7 +4,6 @@ import uniqid from "uniqid";
 import CVForm from "./forms/CVForm.jsx";
 import CVPreview from "./preview/CVPreview.jsx";
 import exampleInfo from "./exampleInfo.jsx";
-import "../styles/content.css";
 // Button icons
 import previewImg from "../icons/preview.svg";
 import editImg from "../icons/edit.svg";
@@ -158,14 +157,14 @@ export default function Content() {
     });
 
     const editContainer = (
-      <main id="edit-container">
-        <nav className="btn-container">
-          <button id="preview-btn" onClick={handleShowPreview}>
-            <img src={previewImg} alt="" />
+      <main id="edit-container" className="flex flex-col justify-center mb-20">
+        <nav className="flex flex-col justify-center gap-2 w-full bg-zinc-950 text-zinc-300 p-2 mb-2 shadow-[0px_5px_5px_rgba(0,0,0,0.548)] md:flex-row">
+          <button onClick={handleShowPreview}>
+            <img src={previewImg} alt="" className="w-8 h-8"/>
             <span>Preview</span>
           </button>
-          <button id="example-btn" onClick={handleLoadExample}>
-            <img src={loadImg} alt="" />
+          <button onClick={handleLoadExample}>
+            <img src={loadImg} alt="" className="w-8 h-8"/>
             <span>Example</span>
           </button>
         </nav>
@@ -191,14 +190,14 @@ export default function Content() {
     );
 
     const previewContainer = (
-      <main id="preview-container">
-        <nav className="btn-container">
-          <button id="edit-btn" onClick={handleEdit}>
-            <img src={editImg} alt="" />
+      <main id="preview-container" className="flex flex-col justify-center mb-20">
+        <nav className="flex flex-col justify-center gap-2 w-full bg-zinc-950 text-zinc-300 p-2 mb-2 shadow-[0px_5px_5px_rgba(0,0,0,0.548)] md:flex-row">
+          <button onClick={handleEdit}>
+            <img src={editImg} alt="" className="w-8 h-8"/>
             <span>Edit</span>
           </button>
-          <button id="print-btn" onClick={handlePrint}>
-            <img src={printImg} alt="" />
+          <button onClick={handlePrint}>
+            <img src={printImg} alt="" className="w-8 h-8"/>
             <span>Print</span>
           </button>
         </nav>

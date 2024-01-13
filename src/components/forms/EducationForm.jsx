@@ -12,8 +12,8 @@ export default function EducationForm({
     delImg,
 }) {
     return (
-        <form className="education-form">
-            <div className="form-row">
+        <form className="mb-4 flex flex-col justify-center gap-2 text-start">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="school">School</label>
                 <input
                     type="text"
@@ -26,7 +26,7 @@ export default function EducationForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="schoolLocation">Location</label>
                 <input
                     type="text"
@@ -39,7 +39,7 @@ export default function EducationForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="degree">Degree</label>
                 <input
                     type="text"
@@ -52,7 +52,7 @@ export default function EducationForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="date">Date</label>
                 <input
                     type="number"
@@ -66,7 +66,7 @@ export default function EducationForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <button className={id} onClick={handleDelete}>
                     <span>Delete</span>
                     <img src={delImg} alt="" />

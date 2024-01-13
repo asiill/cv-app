@@ -4,7 +4,7 @@ export default function ExperienceItem({
     employer, location, startDate, endDate, position, description, id,
 }) {
     return (
-        <div className="experience-item">
+        <div className="flex flex-col gap-1">
             <h3 className={id}>{position}</h3>
             <p className={id}>{startDate} - {endDate}</p>
             <p className={id}>{employer} | {location}</p>

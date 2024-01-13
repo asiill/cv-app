@@ -10,8 +10,8 @@ export default function PersonalForm({
     handleChange,
 }) {
     return (
-        <form className="personal-form">
-            <div className="form-row">
+        <form className="flex flex-col justify-center gap-2 text-start">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="name">Full Name</label>
                 <input
                     type="text"
@@ -22,7 +22,7 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="phone">Phone</label>
                 <input
                     type="tel"
@@ -33,7 +33,7 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="email">Email</label>
                 <input
                     type="email"
@@ -44,7 +44,7 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="location">Location</label>
                 <input
                     type="text"
@@ -55,7 +55,7 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="link">Link</label>
                 <input
                     type="url"
@@ -66,7 +66,7 @@ export default function PersonalForm({
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="summary">Summary</label>
                 <textarea
                     placeholder="Please provide a brief professional summary..."

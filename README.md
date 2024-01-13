@@ -5,7 +5,7 @@ A React application which generates a resume from user entered data.
 https://asiill.github.io/cv-app/
 
 ## Screenshot
-![cvApp](https://github.com/asiill/cv-app/assets/9745019/ae39ba2e-ded4-49b4-8ad7-dd3f4855c764)
+![cvapp](https://github.com/asiill/cv-app/assets/9745019/54431cc1-eced-46bd-a580-422dcc7d8865)
 
 ## Features
 * Edit basic information, education, experience and skills.

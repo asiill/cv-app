@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --ff-base: "Montserrat", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);
@@ -27,4 +29,5 @@ body {
   min-width: 320px;
   min-height: 100vh;
   text-align: center;
+  font-family: var(--ff-base);
 }

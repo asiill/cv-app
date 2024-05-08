@@ -22,10 +22,10 @@ h1 {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   min-width: 320px;
   min-height: 100vh;
   text-align: center;

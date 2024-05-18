@@ -1,4 +1,4 @@
-# CV App
+# CV Creator
 A React application which generates a resume from user entered data.
 
 ## Demo

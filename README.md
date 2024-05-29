@@ -13,10 +13,12 @@ https://asiill.github.io/cv-app/
 * Print the document to a pdf file
 
 ## Getting started
-* git clone git@github.com:asiill/cv-app.git
-* cd cv-app
-* npm install
-* npm run dev
+```bash
+git clone git@github.com:asiill/cv-app.git
+cd cv-app
+npm install
+npm start
+```
 
 ## Built with
 * HTML | CSS

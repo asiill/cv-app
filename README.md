@@ -21,8 +21,6 @@ npm start
 ```
 
 ## Built with
-* HTML | CSS
-* Javascript
 * [React](https://react.dev/)
 * [react-to-print](https://www.npmjs.com/package/react-to-print)
 * [uniqid](https://www.npmjs.com/package/uniqid)

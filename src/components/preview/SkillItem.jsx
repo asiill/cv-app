@@ -5,7 +5,7 @@ export default function SkillItem({
     id,
 }) {
     return (
-        <div className="skill-item">
+        <div className="flex flex-col gap-1">
             <p className={id}>{skill}</p>
         </div>
     );

@@ -9,8 +9,8 @@ export default function SkillForm({
     delImg,
 }) {
     return (
-        <form className="skill-form">
-            <div className="form-row">
+        <form className="mb-4 flex flex-col justify-center gap-2 text-start">
+            <div className="flex flex-col justify-center gap-1">
                 <label for="skill">Skill</label>
                 <input
                     type="text"
@@ -22,7 +22,7 @@ export default function SkillForm({
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className="form-row">
+            <div className="flex flex-col justify-center gap-1">
                 <button className={id} onClick={handleDelete}>
                     <span>Delete</span>
                     <img src={delImg} alt="" />

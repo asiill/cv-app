@@ -3,7 +3,6 @@ import PersonalForm from "./PersonalForm.jsx";
 import EducationForm from "./EducationForm.jsx";
 import ExperienceForm from "./ExperienceForm.jsx";
 import SkillForm from "./SkillForm.jsx";
-import "../../styles/form.css";
 import delImg from "../../icons/delete.svg";
 import addImg from "../../icons/add.svg";
 
@@ -25,8 +24,8 @@ export default function CVForm({
     handleKeyDown,
 }) {
     return (
-        <section id="cv-form">
-            <div id="personal-form-container">
+        <section className="w-full flex flex-col gap-4 p-2 m-auto mt-3 rounded-lg sm:w-3/5">
+            <div className="flex flex-col justify-center gap-4 p-4 rounded-lg text-black bg-zinc-200 shadow-[0px_5px_5px_rgba(0,0,0,0.548)]">
                 <h2>Personal information</h2>
                 <PersonalForm 
                     name={personalInfo.name}
@@ -38,9 +37,9 @@ export default function CVForm({
                     handleChange={handlePersonalChange}
                 />
             </div>
-            <div id="education-form-container">
+            <div className="flex flex-col justify-center gap-4 p-4 rounded-lg text-black bg-zinc-200 shadow-[0px_5px_5px_rgba(0,0,0,0.548)]">
                 <h2>Education</h2>
-                <div id="education-items">
+                <div className="flex flex-col justify-center">
                     {educationInfo.educationArr.map(edu => {
                         return (
                             <EducationForm
@@ -58,14 +57,14 @@ export default function CVForm({
                         );
                     })}
                 </div>
-                <button id="add-education-btn" onClick={handleAddNewEducation}>
+                <button onClick={handleAddNewEducation}>
                     <img src={addImg} alt="" />
                     <span>Add education</span>
                 </button>
             </div>
-            <div id="experience-form-container">
+            <div className="flex flex-col justify-center gap-4 p-4 rounded-lg text-black bg-zinc-200 shadow-[0px_5px_5px_rgba(0,0,0,0.548)]">
                 <h2>Experience</h2>
-                <div id="experience-items">
+                <div className="flex flex-col justify-center">
                     {experienceInfo.experienceArr.map(exp => {
                         return (
                             <ExperienceForm
@@ -85,14 +84,14 @@ export default function CVForm({
                         )
                     })}
                 </div>
-                <button id="add-experience-btn" onClick={handleAddNewExperience}>
+                <button onClick={handleAddNewExperience}>
                     <img src={addImg} alt="" />
                     <span>Add experience</span>
                 </button>
             </div>
-            <div id="skill-form-container">
+            <div className="flex flex-col justify-center gap-4 p-4 rounded-lg text-black bg-zinc-200 shadow-[0px_5px_5px_rgba(0,0,0,0.548)]">
                 <h2>Skills</h2>
-                <div id="skill-items">
+                <div className="flex flex-col justify-center">
                     {skillInfo.skillArr.map(ski => {
                         return (
                             <SkillForm
@@ -107,7 +106,7 @@ export default function CVForm({
                         )
                     })}
                 </div>
-                <button id="add-skill-btn" onClick={handleAddNewSkill}>
+                <button onClick={handleAddNewSkill}>
                     <img src={addImg} alt="" />
                     Add skill
                 </button>

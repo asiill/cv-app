@@ -1,9 +1,8 @@
 import React from "react";
-import "../styles/header.css";
 
 export default function Header() {
     return (
-        <header id="cv-app-header">
+        <header className="p-2 bg-zinc-950 text-zinc-300">
             <h1>CV CREATOR</h1>
         </header>
     )

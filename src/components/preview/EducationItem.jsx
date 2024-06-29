@@ -4,7 +4,7 @@ export default function EducationItem({
     school, location, degree, date, id,
 }) {
     return (
-        <div className="education-item">
+        <div className="flex flex-col gap-1">
             <h3 className={id}>{degree}</h3>
             <p className={id}>{school}</p>
             <p className={id}>{location}</p>
